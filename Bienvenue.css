@@ -1,0 +1,64 @@
+/*
+    Fichier     : Bienvenue.css
+    Auteur      : Florentin Dachicourt
+    Description : Style de la page de bienvenue
+*/
+
+body {
+
+    font-family: Arial, sans-serif;
+    /* Police d'écriture */
+    background-color: rgb(173, 216, 230);
+    /* Couleur de fond */
+    margin: 0;
+    /* Supprime l'espace par défaut */
+}
+
+h1 {
+
+    text-align: center;
+    /* Centre le texte */
+    font-size: 100px;
+    /* Taille du texte */
+    margin: 20px 0 5px 0;
+    /* L'espaces extérieurs */
+}
+
+h2 {
+
+    text-align: center;
+    font-size: 50px;
+    margin: 20px 0 5px 0;
+
+}
+
+.bouton {
+
+    display: block;
+    /* Le bouton ce mais en dessoue du texte  */
+    text-align: center;
+    margin-top: 50px;
+    /* Espace entre le texte */
+}
+
+.bouton img {
+
+    width: 150px;
+    /* Pour la largeur de l'image */
+    cursor: pointer;
+    /* Affiche la main au lieu du curseur */
+    transition: transform 0.2s;
+    /* Petite animation */
+}
+
+@media (max-width: 600px) {
+
+    /* Régle pour les écrans de moins de 600px de large pour adapter l'affichage */
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
