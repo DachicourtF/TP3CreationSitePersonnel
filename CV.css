@@ -1,0 +1,148 @@
+/*
+    Fichier     : CV.css
+    Auteur      : Florentin Dachicourt
+    Description : Style de la page du cv
+*/
+
+body {
+
+    font-family: Arial, sans-serif;
+    /* Police d'écriture */
+    background-color: rgb(249, 249, 249);
+    /* Couleur de fond */
+    margin: 0;
+    /* Supprime l'espace par défaut */
+}
+
+
+h1 {
+
+    text-align: center;
+    /* Centre le texte */
+    font-size: 50px;
+    /* Taille du texte */
+    margin: 20px 0 5px 0;
+}
+
+.principal h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.sous-titre {
+
+    text-align: center;
+    letter-spacing: 3px;
+    /* Espace entre les lettre */
+    text-decoration: underline;
+    /* Souligne le texte */
+    margin-bottom: 30px;
+}
+
+
+.Voletgauche {
+
+    background-color: #3682f5;
+    /* Couleur de fond */
+    width: 250px;
+    /* Largeur */
+    padding: 20px;
+    /* Espace a l'intérieur */
+    margin: 0 20px;
+    border-radius: 30px;
+    /* Arrondit les coins */
+}
+
+.Voletgauche h2 {
+
+    text-align: center;
+    font-size: 18px;
+    /* Taille des titres */
+    border-top: 1px solid black;
+    /* Trait noir fin */
+    padding-top: 10px;
+    /* Espace entre le trait et le titre */
+}
+
+.principal {
+
+    flex: 1;
+    /* Prend toute la place */
+    padding-right: 20px;
+    /* Espace à droite */
+}
+
+
+
+.principal h2 {
+
+    font-size: 18px;
+    background-color: #3682f5;
+    padding: 5px;
+
+}
+
+.page {
+
+    display: flex;
+    /* Place les colonnes a côter */
+}
+
+p,
+li {
+
+    font-size: 14px;
+
+}
+
+.langue {
+
+    position: fixed;
+    /* position fixe */
+    top: 20px;
+    /* Distance depuis le haut */
+    right: 20px;
+    /* Distance depuis la droite */
+}
+
+.langue img {
+
+    width: 60px;
+    /* Largeur de l'image */
+    cursor: pointer;
+    /* Affiche la main au lieux du curseur */
+    transition: transform 0.2s;
+    /* Petite animation */
+}
+
+.retour {
+
+    position: fixed;
+    bottom: 20px;
+    /* Distance depuis le bas */
+    right: 20px;
+}
+
+.retour img {
+
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+}
+
+@media (max-width: 600px) {
+     /* Régle pour les écrans de moins de 600px de large pour adapter l'affichage */
+    h1 { font-size: 30px; }
+
+    .page { flex-direction: column; }
+
+    .Voletgauche {
+        width: auto;
+        margin: 0 20px 20px 20px;
+    }
+
+    .principal { padding: 0 20px; }
+
+    .retour img { width: 80px; }
+}
