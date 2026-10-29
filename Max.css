@@ -1,0 +1,144 @@
+/*
+    Fichier     : Max.css
+    Auteur      : Florentin Dachicourt
+    Description : Style commun aux pages Debut, Carriere, Palmares et Galerie
+*/
+
+body {
+
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgb(173, 216, 230), white);
+    /* dégrader couleur */
+    min-height: 100vh;
+    /* Hauteur de la page */
+    margin: 0;
+
+}
+
+h1 {
+
+    color: rgb(4, 41, 247);
+    /* couleur du texte */
+    text-align: center;
+    /* Centre le texte */
+    margin: 0;
+    /* L'espace autour du texte */
+    padding: 20px;
+    /* espace a l'intérieur */
+}
+
+h2 {
+
+    color: rgb(10, 10, 11);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+
+}
+
+p {
+    font-size: 20px;
+    /* Taille du texte */
+    margin: 20px;
+
+}
+
+.bouton {
+
+    position: fixed;
+    /* Position fixe */
+    bottom: 20px;
+    /* Distance depuis le bas */
+    right: 20px;
+    /* Distance depuis la droite */
+}
+
+.bouton img {
+
+    width: 150px;
+    /* Largeur de l'image */
+    cursor: pointer;
+    /* Affiche la main au lieux du curseur */
+    transition: transform 0.2s;
+    /* Petite animation */
+}
+
+.image {
+
+    display: block;
+    /* Chaque photo a sa place  */
+    width: 80%;
+    /* Largeur de la page */
+    max-width: 900px;
+    /*  largeur max */
+    margin: 30px auto;
+    border-radius: 20px;
+    /* arondie les coins */
+
+}
+
+.texte {
+
+    background-color: white;
+    max-width: 900px;
+    /* Largeur maximale de la carte */
+    margin: 20px auto;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 20px;
+    list-style: none;
+    /* Retire les poind des liste avant le texte */
+
+}
+
+.texte li {
+
+    font-size: 20px;
+    line-height: 1.6;
+    /* Espace entre les lignes */
+    margin-bottom: 15px;
+    /* Espace entre les phrases */
+}
+
+#liste {
+
+    max-width: 800px;
+    /* Largeur max de la liste */
+    margin: 20px auto;
+    /* Espace et auto pour centrée */
+    padding: 0;
+
+
+}
+
+#liste li {
+
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 20px;
+    /* Espace à l'intérieur des différent carte de record de Max */
+    margin-bottom: 15px;
+    /* Espace entre les différent cartes de record de Max */
+    font-size: 20px;
+    text-align: center;
+    list-style: none;
+    /* Retire les poind des liste avant le texte */
+
+}
+
+@media (max-width: 600px) {
+     /* Régle pour les écrans de moins de 600px de large pour adapter l'affichage */
+    .texte {
+        margin: 10px;
+        padding: 15px 20px;
+    }
+
+    .texte li,
+    #liste li {
+        font-size: 16px;
+    }
+
+    .bouton img { width: 80px; }
+
+    body { padding-bottom: 100px; }
+}

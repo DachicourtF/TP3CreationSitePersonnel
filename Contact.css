@@ -1,0 +1,79 @@
+/*
+    Fichier     : Contact.css
+    Auteur      : Florentin Dachicourt
+    Description : Style de la page contact 
+*/
+
+body {
+
+    background: linear-gradient(to bottom, rgb(173, 216, 230), white);
+    /* dégradé de couleur */
+    min-height: 100vh;
+    /* Taile de l'écrant */
+}
+
+h1 {
+
+
+    color: rgb(0, 0, 0);
+    /* Couleur du texte */
+    text-align: center;
+    /* centre le texte */
+    margin: 0;
+    /* Supprime l'espace extérieur */
+    padding: 20px;
+    /* Espace à l'intérieur du bandeau */
+
+}
+
+h2 {
+
+    color: rgb(20, 40, 100);
+
+
+}
+
+.sous-titre {
+
+    background-color: white;
+    /* Fond blanc */
+    padding: 20px 30px;
+    margin: 20px;
+    border-radius: 20px;
+    /* arrondie les coins */
+    font-size: 22px;
+    /* Taille du texte */
+
+}
+
+#retour {
+
+    position: fixed;
+    /* Fixe la possition de l'image */
+    bottom: 20px;
+    /* Distance depuis le bas */
+    right: 20px;
+    /* Distance depuis la droite */
+}
+
+#retour img {
+
+    width: 150px;
+    /* Largeur de l'image */
+    cursor: pointer;
+    /* Affiche la main au lieu du curseur */
+    transition: transform 0.2s;
+    /* Petite animation */
+}
+
+@media (max-width: 600px) {
+     /* Régle pour les écrans de moins de 600px de large pour adapter l'affichage */
+    .sous-titre {
+        font-size: 16px;
+        margin: 10px;
+        padding: 15px 20px;
+        overflow-wrap: anywhere;
+    }
+
+    #retour img { width: 80px; }
+}
